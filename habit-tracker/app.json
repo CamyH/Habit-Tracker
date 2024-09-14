@@ -31,15 +31,6 @@
     ],
     "experiments": {
       "typedRoutes": true
-    },
-    "extra": {
-      "router": {
-        "origin": false
-      },
-      "eas": {
-        "projectId": "b9c0ff9d-f675-479a-a3e3-46b2c76ffd11"
-      }
-    },
-    "owner": "camyh"
+    }
   }
 }
