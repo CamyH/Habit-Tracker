@@ -1,5 +1,4 @@
 // Components
-import EditScreenInfo from "@/components/EditScreenInfo"
 import { Text, View } from "@/components/Themed"
 
 // Constants
@@ -19,7 +18,6 @@ export default function StatsScreen() {
         lightColor={Colors.light.background}
         darkColor={Colors.dark.background}
       />
-      <EditScreenInfo path='app/(tabs)/two.tsx' />
     </View>
   )
 }

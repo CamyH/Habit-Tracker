@@ -1,5 +1,4 @@
 // Components
-import EditScreenInfo from "@/components/EditScreenInfo"
 import { Text, View } from "@/components/Themed"
 
 // Constants
@@ -20,7 +19,6 @@ export default function IndexScreen() {
         lightColor={Colors.light.background}
         darkColor={Colors.dark.background}
       />
-      <EditScreenInfo path='app/(tabs)/index.tsx' />
     </View>
   )
 }
