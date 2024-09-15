@@ -54,9 +54,9 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name='two'
+        name='stats'
         options={{
-          title: "Tab Two",
+          title: PageText.stats.pageHeader,
           tabBarIcon: ({ color }) => <TabBarIcon name='code' color={color} />,
         }}
       />
