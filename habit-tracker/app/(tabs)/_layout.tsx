@@ -7,10 +7,12 @@ import { Pressable } from "react-native"
 // Components
 import { useColorScheme } from "@/components/useColorScheme"
 import { useClientOnlyValue } from "@/components/useClientOnlyValue"
+import FontAwesome5 from "@expo/vector-icons/FontAwesome5"
 
 // Constants
 import PageText from "@/constants/PageText"
 import Colors from "@/constants/Colors"
+import { useStyles } from "@/styles/_layout.styles"
 
 // You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
 function TabBarIcon(props: {
@@ -37,6 +39,14 @@ export default function TabLayout() {
         options={{
           title: PageText.index.pageHeader,
           tabBarIcon: ({ color }) => <TabBarIcon name='code' color={color} />,
+          headerLeft: () => (
+            <FontAwesome5
+              name='fire'
+              size={24}
+              color='black'
+              style={useStyles().streakCounter}
+            />
+          ),
           headerRight: () => (
             <Link href='/modal' asChild>
               <Pressable>
@@ -45,7 +55,7 @@ export default function TabLayout() {
                     name='info-circle'
                     size={25}
                     color={Colors[colorScheme ?? "light"].text}
-                    style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
+                    style={useStyles(pressed).modalLink}
                   />
                 )}
               </Pressable>
